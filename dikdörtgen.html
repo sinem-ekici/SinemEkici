@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap İçeriği</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .section {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .login {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="section">Kapak</div>
+        <div class="section">İçindekiler</div>
+        <div class="section">Önsöz</div>
+        <div class="section">Bölüm 1</div>
+        <div class="section">Bölüm 2</div>
+        <div class="login">Login</div>
+    </div>
+</body>
+</html>
