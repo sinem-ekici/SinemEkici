@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animasyonlar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .shape-container {
+            position: relative;
+        }
+
+
+        
+        .change-color {
+            width: 50px;
+            height: 50px;
+            background-color: #cc2e63;
+            position: absolute;
+            animation: changeColorAnimation 2s infinite alternate;
+        }
+
+        .transparency {
+            width: 50px;
+            height: 50px;
+            background-color: #1292f3;
+            position: absolute;
+            animation: transparencyAnimation 2s infinite alternate;
+        }
+
+        .up-down {
+            width: 50px;
+            height: 50px;
+            background-color: #d0db34;
+            position: absolute;
+            animation: upDownAnimation 2s infinite alternate;
+        }
+
+        .grow-shrink {
+            width: 50px;
+            height: 50px;
+            background-color: #3ce7b1;
+            position: absolute;
+            animation: growShrinkAnimation 2s infinite alternate;
+        }
+
+        .left-right {
+            width: 50px;
+            height: 50px;
+            background-color: #9b59b6;
+            position: absolute;
+            animation: leftRightAnimation 2s infinite alternate;
+        }
+      
+        @keyframes changeColorAnimation {
+            0% {
+                background-color: #2ecc71;
+            }
+            100% {
+                background-color: #e74c3c;
+            }
+        }
+
+        @keyframes transparencyAnimation {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        } @keyframes leftRightAnimation {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100px;
+            }
+        }
+
+
+        @keyframes upDownAnimation {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: 100px;
+            }
+        }
+
+        @keyframes growShrinkAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="shape-container">
+        <div class="up-down"></div>
+    </div>
+
+    <div class="shape-container">
+        <div class="grow-shrink"></div>
+    </div>
+
+    <div class="shape-container">
+        <div class="change-color"></div>
+    </div>
+
+    <div class="shape-container">
+        <div class="transparency"></div>
+    </div>
+
+    <div class="shape-container">
+        <div class="left-right"></div>
+    </div>
+</body>
+</html>
+5
