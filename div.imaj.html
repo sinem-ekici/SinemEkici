@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Animasyonlar</title>
+    <title>Animations</title>
     <style>
         body {
             display: flex;
@@ -11,34 +11,38 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #ecf0f1; /* Set a light background color */
         }
 
         .shape-container {
             position: relative;
+            margin: 20px; /* Add margin for spacing */
         }
 
-
-        
         .change-color {
             width: 50px;
             height: 50px;
-            background-color: #cc2e63;
+            background-color: #e74c3c;
             position: absolute;
+            border-radius: 50%; /* Make it a circle */
             animation: changeColorAnimation 2s infinite alternate;
         }
 
         .transparency {
             width: 50px;
             height: 50px;
-            background-color: #1292f3;
+            background-color: #9b59b6;
             position: absolute;
+            border-radius: 50%; /* Make it a circle */
             animation: transparencyAnimation 2s infinite alternate;
         }
 
         .up-down {
-            width: 50px;
-            height: 50px;
-            background-color: #d0db34;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid #2ecc71; /* Triangle shape */
             position: absolute;
             animation: upDownAnimation 2s infinite alternate;
         }
@@ -46,7 +50,7 @@
         .grow-shrink {
             width: 50px;
             height: 50px;
-            background-color: #3ce7b1;
+            background-color: #e67e22;
             position: absolute;
             animation: growShrinkAnimation 2s infinite alternate;
         }
@@ -54,17 +58,17 @@
         .left-right {
             width: 50px;
             height: 50px;
-            background-color: #9b59b6;
+            background-color: #3498db;
             position: absolute;
             animation: leftRightAnimation 2s infinite alternate;
         }
       
         @keyframes changeColorAnimation {
             0% {
-                background-color: #2ecc71;
+                background-color: #c0392b;
             }
             100% {
-                background-color: #e74c3c;
+                background-color: #f39c12;
             }
         }
 
@@ -73,9 +77,11 @@
                 opacity: 1;
             }
             100% {
-                opacity: 0.2;
+                opacity: 0.4;
             }
-        } @keyframes leftRightAnimation {
+        }
+
+        @keyframes leftRightAnimation {
             0% {
                 left: 0;
             }
@@ -83,7 +89,6 @@
                 left: 100px;
             }
         }
-
 
         @keyframes upDownAnimation {
             0% {
@@ -102,8 +107,6 @@
                 transform: scale(1.5);
             }
         }
-
-        
     </style>
 </head>
 <body>
@@ -128,4 +131,3 @@
     </div>
 </body>
 </html>
-5
