@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    h2
+    {
+       background-color: rgb(255, 254, 254) 
+    }
+    .sectionpazartesi
+    {
+        background-color:rgb(228, 137, 233)
+    }
+    .sectionsali
+    {
+        background-color:rgb(224, 166, 233)
+    }
+    .sectionc1
+    {
+        background-color:rgb(208, 101, 232)
+    }
+    .sectionc2
+    {
+        background-color:rgb(222, 156, 252)
+    }
+    .sectionc3
+    {
+        background-color:rgb(245, 162, 243)
+    }
+        .sectioncp1
+    {
+        background-color:rgb(248, 205, 248)
+    }
+        .sectioncuma1
+    {
+        background-color:rgb(255, 116, 250)
+    }
+</style>
+</head>
+
+    
+<body>
+    <h2>İnline Css</h2>
+	
+	
+	<table border="1" width="100%">
+	<thead>
+		
+		<tr>
+			<th></th>
+			<th>Pazartesi</th>
+			<th>Salı</th>
+			<th>Çarşamba</th>
+			<th>Perşembe</th>
+			<th>Cuma</th>
+		</tr>
+	</thead>
+	
+		<thead>
+		<tr>
+			<td>9.00-10.40</td>
+			<td rowspan="1" style="background-color: rgb(228, 137, 233)">BTE307.01</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" style="background-color: rgb(208, 101, 232)">EGT304.08</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" style="background-color: rgb(255, 116, 250)">BTE311</td>
+		</tr>
+		
+			<tr>
+			
+			<td>11.40-13.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1" style="background-color: rgb(222, 156, 252)">BTE309</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" style="background-color: rgb(255, 116, 250)">BTE311</td>
+			</tr>
+			
+			<tr>
+				<td>12.40-14.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" style="background-color: rgb(224, 166, 233)">202.1</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			
+			</tr>
+			
+			<tr>
+			<td>15.40-17.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1" style="background-color: rgb(245, 162, 243)">EGT303.07</td>
+			<td rowspan="1" style="background-color: rgb(248, 205, 248)">BTE422</td>
+			<td rowspan="1"></td>
+			
+			
+			
+			
+			</tr>
+	
+			
+			
+		</thead>
+	
+	
+	
+	</table>
+    
+    <br>
+    <h2>Internal Css</h2>
+    <table border="1" width="100%">
+	<thead>
+		
+		<tr>
+			<th></th>
+			<th>Pazartesi</th>
+			<th>Salı</th>
+			<th>Çarşamba</th>
+			<th>Perşembe</th>
+			<th>Cuma</th>
+		</tr>
+	</thead>
+	
+		<thead>
+		<tr>
+			<td>9.00-10.40</td>
+			<td rowspan="1" class="sectionpazartesi">BTE307.01</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionc1">EGT304.08</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectioncuma1">BTE311</td>
+		</tr>
+		
+			<tr>
+			
+			<td>11.40-13.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionc2">BTE309</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectioncuma1">BTE311</td>
+			</tr>
+			
+			<tr>
+				<td>12.40-14.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionsalı">202.1</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			
+			</tr>
+			
+			<tr>
+			<td>15.40-17.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionc3">EGT303.07</td>
+			<td rowspan="1" class="sectioncp1">BTE422</td>
+			<td rowspan="1"></td>
+			
+			
+			
+			
+			</tr>
+	
+			
+			
+		</thead>
+	
+	
+        
+	
+	</table>
+    <br>
+    
+    <h2>External Css</h2>
+    <table border="1" width="100%">
+	<thead>
+		
+		<tr>
+			<th></th>
+			<th>Pazartesi</th>
+			<th>Salı</th>
+			<th>Çarşamba</th>
+			<th>Perşembe</th>
+			<th>Cuma</th>
+		</tr>
+	</thead>
+	
+		<thead>
+		<tr>
+			<td>9.00-10.40</td>
+			<td rowspan="1" class="sectionextp">BTE307.01</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionexcar1">EGT304.08</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectioncuma1">BTE311</td>
+		</tr>
+		
+			<tr>
+			
+			<td>11.40-13.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionexcar2">BTE309</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectioncuma1">BTE311</td>
+			</tr>
+			
+			<tr>
+				<td>12.40-14.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionexsali">202.1</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			
+			</tr>
+			
+			<tr>
+			<td>15.40-17.30</td>
+			<td rowspan="1"></td>
+			<td rowspan="1"></td>
+			<td rowspan="1" class="sectionexcar3">EGT303.07</td>
+			<td rowspan="1" class="sectionexper1">BTE422</td>
+			<td rowspan="1"></td>
+
+			</tr>
+
+		</thead>
+	</table>
+	
+	
+	
+</body>
