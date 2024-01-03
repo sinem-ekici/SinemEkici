@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitabın İçindekiler</title>
-    <style>
-        .content {
-            color: purple;
-        }
-    </style>
-    <style>
-        body {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+<style>
+* {
+  box-sizing: border-box;
+}
+.flex-container > div {
+  color: #a44fd8;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+  
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  background-color: #efdff6;
+}
 
-        .content {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 10px;
-            text-align: center;
-            background-color: rgb(236, 209, 236); 
-            padding: 20px; 
-        }
+.flex-item-left {
+  background-color: #ffffff;
+  padding: 10px;
+  
+}
 
-        .section {
-            border: 1px solid #000000;
-            padding: 10px;
-            font-size: 18px;
-        }
+.flex-item-right {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 
-        .login {
-            border: 1px solid #000000;
-            padding: 10px;
-            background-color: #8c76ee;
-            color: #fff;
-            font-size: 18px;
-        }
-    </style>
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
-    <div class="content">
-        <div class="section">Kapak</div>
-        <div class="section">İçindekiler</div>
-        <div class="section">Önsöz</div>
-        <div class="section">Bölüm 1</div>
-        <div class="section">Bölüm 2</div>
-        <div class="login">Login</div>
-    </div>
+
+
+
+<div class="flex-container">
+  <div class="flex-item-left">Kapak</div>
+  <div class="flex-item-left">İçindekiler</div>
+  <div class="flex-item-left">Önsöz</div>
+  <div class="flex-item-left">Bölüm1</div>
+  <div class="flex-item-left">Bölüm2</div>
+  <div class="flex-item-right">Login1</div>
+</div>
 </body>
-</html>
